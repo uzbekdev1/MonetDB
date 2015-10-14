@@ -8,7 +8,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using DM.TCP.Framework.Communication.ScsServices.Service;
 using MonetDB.Configurations;
 using MonetDB.DataProvider;
 using MonetDB.Driver.Data;
@@ -23,6 +22,7 @@ using MonetDB.TCP.Models;
 using MonetDB.Models;
 using MonetDB.Driver.Exceptions;
 using MonetDB.Helpers.Win32;
+using Hik.Communication.ScsServices.Service;
 
 namespace MonetDB.TCP.Server
 {

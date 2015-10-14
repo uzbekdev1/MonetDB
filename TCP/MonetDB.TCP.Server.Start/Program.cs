@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
-using DM.TCP.Framework.Communication.Scs.Communication.EndPoints.Tcp;
-using DM.TCP.Framework.Communication.ScsServices.Service;
 using MonetDB.Enums.Logging;
 using MonetDB.Helpers.Logging;
+using Hik.Communication.Scs.Communication.EndPoints.Tcp;
+using Hik.Communication.ScsServices.Service;
 
 namespace MonetDB.TCP.Server.Start
 {

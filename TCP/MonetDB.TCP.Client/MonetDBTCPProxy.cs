@@ -5,14 +5,14 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
-using DM.TCP.Framework.Communication.Scs.Communication.EndPoints.Tcp;
-using DM.TCP.Framework.Communication.ScsServices.Client;
 using MonetDB.DataProvider;
 using MonetDB.Extensions;
 using MonetDB.Helpers;
 using MonetDB.Models;
 using MonetDB.TCP.Enums;
 using MonetDB.TCP.Models;
+using Hik.Communication.ScsServices.Client;
+using Hik.Communication.Scs.Communication.EndPoints.Tcp;
 
 namespace MonetDB.TCP.Client
 {

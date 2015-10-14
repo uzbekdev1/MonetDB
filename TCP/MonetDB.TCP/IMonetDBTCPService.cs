@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using DM.TCP.Framework.Communication.ScsServices.Service;
 using MonetDB.Models;
 using MonetDB.TCP.Enums;
 using MonetDB.TCP.Models;
+using Hik.Communication.ScsServices.Service;
 
 namespace MonetDB.TCP
 {
