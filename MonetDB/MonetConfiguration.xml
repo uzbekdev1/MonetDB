@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DbConfiguration>
+  <DbInstallerDir>${BUILD}\${PLATFORM}\MonetDB5</DbInstallerDir>
+  <DbFarmDir>${BUILD}\dbfarm</DbFarmDir>
+  <LogDir>${BUILD}\logs</LogDir>
+  <TempDir>${BUILD}\tmp</TempDir> 
+</DbConfiguration>

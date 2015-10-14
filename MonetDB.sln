@@ -1,0 +1,253 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB", "MonetDB\MonetDB.csproj", "{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.GUI", "MonetDB.GUI\MonetDB.GUI.csproj", "{45401D03-7112-4F2D-B2A5-A686A425767B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2E56A3D2-891C-4816-AB41-6BC355ABCC7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Connector", "Connector", "{3E50A21F-4623-46E9-B1F8-C3598C442FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.Connector.Data", "Connector\MonetDB.Connector.Data\MonetDB.Connector.Data.csproj", "{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.Connector.SqlServer", "Connector\MonetDB.Connector.SqlServer\MonetDB.Connector.SqlServer.csproj", "{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TCP", "TCP", "{20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.TCP.Client", "TCP\MonetDB.TCP.Client\MonetDB.TCP.Client.csproj", "{93CB71B4-4F85-46FB-9884-FCBC3FE16196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.TCP.Server", "TCP\MonetDB.TCP.Server\MonetDB.TCP.Server.csproj", "{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.TCP", "TCP\MonetDB.TCP\MonetDB.TCP.csproj", "{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driver", "Driver", "{6197B45F-A114-4D71-B127-EC1DFE4C3FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.Driver", "Driver\MonetDB.Driver\MonetDB.Driver.csproj", "{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.Driver.Demo", "Driver\MonetDB.Driver.Demo\MonetDB.Driver.Demo.csproj", "{5E26A1F1-86DB-4D33-975B-94177F2D57A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.TCP.Server.Start", "TCP\MonetDB.TCP.Server.Start\MonetDB.TCP.Server.Start.csproj", "{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A22A9206-B387-4758-9259-BB972E52881A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{49F67994-C8B2-431A-BB8A-EEBFB58E891D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonetDB.TCP.Startup", "TCP\MonetDB.TCP.Startup\MonetDB.TCP.Startup.csproj", "{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Debug|x64.ActiveCfg = Debug|x64
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Debug|x64.Build.0 = Debug|x64
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Debug|x86.ActiveCfg = Debug|x86
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Debug|x86.Build.0 = Debug|x86
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Release|x64.ActiveCfg = Release|x64
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Release|x64.Build.0 = Release|x64
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Release|x86.ActiveCfg = Release|x86
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3}.Release|x86.Build.0 = Release|x86
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Debug|x64.ActiveCfg = Debug|x64
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Debug|x64.Build.0 = Debug|x64
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Debug|x86.ActiveCfg = Debug|x86
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Debug|x86.Build.0 = Debug|x86
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Release|x64.ActiveCfg = Release|x64
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Release|x64.Build.0 = Release|x64
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Release|x86.ActiveCfg = Release|x86
+		{45401D03-7112-4F2D-B2A5-A686A425767B}.Release|x86.Build.0 = Release|x86
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Debug|x64.ActiveCfg = Debug|x64
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Debug|x64.Build.0 = Debug|x64
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Debug|x86.ActiveCfg = Debug|x86
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Debug|x86.Build.0 = Debug|x86
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Release|x64.ActiveCfg = Release|x64
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Release|x64.Build.0 = Release|x64
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Release|x86.ActiveCfg = Release|x86
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019}.Release|x86.Build.0 = Release|x86
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Debug|x64.ActiveCfg = Debug|x64
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Debug|x64.Build.0 = Debug|x64
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Debug|x86.ActiveCfg = Debug|x86
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Debug|x86.Build.0 = Debug|x86
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Release|x64.ActiveCfg = Release|x64
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Release|x64.Build.0 = Release|x64
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Release|x86.ActiveCfg = Release|x86
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D}.Release|x86.Build.0 = Release|x86
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Debug|x64.ActiveCfg = Debug|x64
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Debug|x64.Build.0 = Debug|x64
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Debug|x86.ActiveCfg = Debug|x86
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Debug|x86.Build.0 = Debug|x86
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Release|x64.ActiveCfg = Release|x64
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Release|x64.Build.0 = Release|x64
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Release|x86.ActiveCfg = Release|x86
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196}.Release|x86.Build.0 = Release|x86
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Debug|x64.ActiveCfg = Debug|x64
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Debug|x64.Build.0 = Debug|x64
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Debug|x86.ActiveCfg = Debug|x86
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Debug|x86.Build.0 = Debug|x86
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Release|x64.ActiveCfg = Release|x64
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Release|x64.Build.0 = Release|x64
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Release|x86.ActiveCfg = Release|x86
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9}.Release|x86.Build.0 = Release|x86
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Debug|x64.ActiveCfg = Debug|x64
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Debug|x64.Build.0 = Debug|x64
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Debug|x86.ActiveCfg = Debug|x86
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Debug|x86.Build.0 = Debug|x86
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Release|x64.ActiveCfg = Release|x64
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Release|x64.Build.0 = Release|x64
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Release|x86.ActiveCfg = Release|x86
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879}.Release|x86.Build.0 = Release|x86
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Debug|x64.ActiveCfg = Debug|x64
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Debug|x64.Build.0 = Debug|x64
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Debug|x86.ActiveCfg = Debug|x86
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Debug|x86.Build.0 = Debug|x86
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Release|x64.ActiveCfg = Release|x64
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Release|x64.Build.0 = Release|x64
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Release|x86.ActiveCfg = Release|x86
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8}.Release|x86.Build.0 = Release|x86
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Debug|x64.ActiveCfg = Debug|x64
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Debug|x64.Build.0 = Debug|x64
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Debug|x86.ActiveCfg = Debug|x86
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Debug|x86.Build.0 = Debug|x86
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Release|x64.ActiveCfg = Release|x64
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Release|x64.Build.0 = Release|x64
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Release|x86.ActiveCfg = Release|x86
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6}.Release|x86.Build.0 = Release|x86
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Debug|x64.ActiveCfg = Debug|x64
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Debug|x64.Build.0 = Debug|x64
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Debug|x86.ActiveCfg = Debug|x86
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Debug|x86.Build.0 = Debug|x86
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Release|x64.ActiveCfg = Release|x64
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Release|x64.Build.0 = Release|x64
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Release|x86.ActiveCfg = Release|x86
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5}.Release|x86.Build.0 = Release|x86
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Debug|x64.Build.0 = Debug|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Release|x64.ActiveCfg = Release|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Release|x64.Build.0 = Release|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE694652-C255-4BF4-A90D-A1DBF14A2FA3} = {A22A9206-B387-4758-9259-BB972E52881A}
+		{45401D03-7112-4F2D-B2A5-A686A425767B} = {2E56A3D2-891C-4816-AB41-6BC355ABCC7E}
+		{2E56A3D2-891C-4816-AB41-6BC355ABCC7E} = {A22A9206-B387-4758-9259-BB972E52881A}
+		{3E50A21F-4623-46E9-B1F8-C3598C442FB0} = {A22A9206-B387-4758-9259-BB972E52881A}
+		{EDF94B97-4E88-45C7-93D7-9C8D6A0F5019} = {3E50A21F-4623-46E9-B1F8-C3598C442FB0}
+		{30F0B3FD-E6B6-4B48-997E-1AE24B771B6D} = {3E50A21F-4623-46E9-B1F8-C3598C442FB0}
+		{20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554} = {A22A9206-B387-4758-9259-BB972E52881A}
+		{93CB71B4-4F85-46FB-9884-FCBC3FE16196} = {20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554}
+		{9CE4A9D8-BA77-4A3F-91A2-9C60B7B4A2A9} = {20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554}
+		{2FAC30D9-DB9A-4D57-B66A-5FBBFA763879} = {20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554}
+		{6197B45F-A114-4D71-B127-EC1DFE4C3FC8} = {A22A9206-B387-4758-9259-BB972E52881A}
+		{715AA7CD-5CFC-4CBA-ACDD-4FC7CBD7A2C8} = {6197B45F-A114-4D71-B127-EC1DFE4C3FC8}
+		{5E26A1F1-86DB-4D33-975B-94177F2D57A6} = {49F67994-C8B2-431A-BB8A-EEBFB58E891D}
+		{E651C0C1-27BE-467F-AEAA-5AE5B40A4ED5} = {20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554}
+		{7CCBB5AE-7258-496C-B76F-3E75E3D5DDF5} = {20FC47AF-0AC8-4F3E-B3DC-D5D22C6C0554}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dmtash.ddns.net:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MonetDB\\MonetDB.csproj
+		SccProjectTopLevelParentUniqueName1 = MonetDB.sln
+		SccProjectName1 = MonetDB
+		SccLocalPath1 = MonetDB
+		SccProjectUniqueName2 = TCP\\MonetDB.TCP\\MonetDB.TCP.csproj
+		SccProjectTopLevelParentUniqueName2 = MonetDB.sln
+		SccProjectName2 = TCP/MonetDB.TCP
+		SccLocalPath2 = TCP\\MonetDB.TCP
+		SccProjectUniqueName3 = TCP\\MonetDB.TCP.Client\\MonetDB.TCP.Client.csproj
+		SccProjectTopLevelParentUniqueName3 = MonetDB.sln
+		SccProjectName3 = TCP/MonetDB.TCP.Client
+		SccLocalPath3 = TCP\\MonetDB.TCP.Client
+		SccProjectUniqueName4 = Driver\\MonetDB.Driver\\MonetDB.Driver.csproj
+		SccProjectTopLevelParentUniqueName4 = MonetDB.sln
+		SccProjectName4 = Driver/MonetDB.Driver
+		SccLocalPath4 = Driver\\MonetDB.Driver
+		SccProjectUniqueName5 = TCP\\MonetDB.TCP.Server\\MonetDB.TCP.Server.csproj
+		SccProjectTopLevelParentUniqueName5 = MonetDB.sln
+		SccProjectName5 = TCP/MonetDB.TCP.Server
+		SccLocalPath5 = TCP\\MonetDB.TCP.Server
+		SccProjectUniqueName6 = TCP\\MonetDB.TCP.Server.Start\\MonetDB.TCP.Server.Start.csproj
+		SccProjectTopLevelParentUniqueName6 = MonetDB.sln
+		SccProjectName6 = TCP/MonetDB.TCP.Server.Start
+		SccLocalPath6 = TCP\\MonetDB.TCP.Server.Start
+		SccProjectUniqueName7 = Connector\\MonetDB.Connector.Data\\MonetDB.Connector.Data.csproj
+		SccProjectTopLevelParentUniqueName7 = MonetDB.sln
+		SccProjectName7 = Connector/MonetDB.Connector.Data
+		SccLocalPath7 = Connector\\MonetDB.Connector.Data
+		SccProjectUniqueName8 = MonetDB.GUI\\MonetDB.GUI.csproj
+		SccProjectTopLevelParentUniqueName8 = MonetDB.sln
+		SccProjectName8 = MonetDB.GUI
+		SccLocalPath8 = MonetDB.GUI
+		SccProjectUniqueName9 = Connector\\MonetDB.Connector.SqlServer\\MonetDB.Connector.SqlServer.csproj
+		SccProjectTopLevelParentUniqueName9 = MonetDB.sln
+		SccProjectName9 = Connector/MonetDB.Connector.SqlServer
+		SccLocalPath9 = Connector\\MonetDB.Connector.SqlServer
+		SccProjectUniqueName10 = Driver\\MonetDB.Driver.Demo\\MonetDB.Driver.Demo.csproj
+		SccProjectTopLevelParentUniqueName10 = MonetDB.sln
+		SccProjectName10 = Driver/MonetDB.Driver.Demo
+		SccLocalPath10 = Driver\\MonetDB.Driver.Demo
+		SccProjectUniqueName11 = TCP\\MonetDB.TCP.Startup\\MonetDB.TCP.Startup.csproj
+		SccProjectTopLevelParentUniqueName11 = MonetDB.sln
+		SccProjectName11 = TCP/MonetDB.TCP.Startup
+		SccLocalPath11 = TCP\\MonetDB.TCP.Startup
+	EndGlobalSection
+EndGlobal
