@@ -30,3 +30,15 @@
 
 # Debug files
 *.dSYM/
+/Build
+/TCP/MonetDB.TCP/obj
+/TCP/MonetDB.TCP.Client/obj
+/TCP/MonetDB.TCP.Server/obj
+/TCP/MonetDB.TCP.Server.Start/obj
+/TCP/MonetDB.TCP.Startup/obj
+/MonetDB.GUI/obj
+/MonetDB/obj
+/Driver/MonetDB.Driver.Demo/obj
+/Driver/MonetDB.Driver/obj
+/Connector/MonetDB.Connector.Data/obj
+/Connector/MonetDB.Connector.SqlServer/obj
