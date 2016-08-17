@@ -42,3 +42,6 @@
 /Driver/MonetDB.Driver/obj
 /Connector/MonetDB.Connector.Data/obj
 /Connector/MonetDB.Connector.SqlServer/obj
+/Build/tmp
+/Build/dbfarm
+/Build/logs
