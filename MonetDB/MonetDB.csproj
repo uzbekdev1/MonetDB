@@ -82,6 +82,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Lz4Net, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Lz4.Net.1.0.98\lib\net45\Lz4Net.dll</HintPath>
@@ -136,342 +139,312 @@
     <Compile Include="Models\TableColumnInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dbfarm\readme.txt">
+    <None Include="dbfarm\readme.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="logs\readme.txt">
+    </None>
+    <None Include="logs\readme.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="MonetConfiguration.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="tmp\readme.txt">
+    <None Include="tmp\readme.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="x64\lz4X64.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="x64\MonetDB5\banner.bmp">
+    <None Include="x64\MonetDB5\banner.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\iconv.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\iconv.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libbat.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libbat.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libbz2.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libbz2.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libeay32.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libeay32.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libmapi.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libmapi.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libmonetdb5.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libmonetdb5.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libstream.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libstream.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\libxml2.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\libxml2.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\mclient.exe">
+    </None>
+    <None Include="x64\MonetDB5\bin\mclient.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\mserver5.exe">
+    </None>
+    <None Include="x64\MonetDB5\bin\mserver5.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\msqldump.exe">
+    </None>
+    <None Include="x64\MonetDB5\bin\msqldump.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\pcre.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\pcre.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\ssleay32.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\ssleay32.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\stethoscope.exe">
+    </None>
+    <None Include="x64\MonetDB5\bin\stethoscope.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\bin\zlib1.dll">
+    </None>
+    <None Include="x64\MonetDB5\bin\zlib1.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\09_like.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\09_like.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\10_math.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\10_math.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\11_times.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\11_times.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\12_url.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\12_url.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\13_date.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\13_date.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\14_inet.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\14_inet.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\15_querylog.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\15_querylog.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\16_tracelog.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\16_tracelog.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\17_temporal.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\17_temporal.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\20_vacuum.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\20_vacuum.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\21_dependency_functions.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\21_dependency_functions.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\22_clients.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\22_clients.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\23_skyserver.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\23_skyserver.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\24_zorder.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\24_zorder.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\25_debug.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\25_debug.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\26_sysmon.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\26_sysmon.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\27_rejects.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\27_rejects.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\39_analytics.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\39_analytics.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\40_json.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\40_json.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\41_md5sum.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\41_md5sum.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\45_uuid.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\45_uuid.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\46_profiler.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\46_profiler.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\51_sys_schema_extension.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\51_sys_schema_extension.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\75_storagemodel.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\75_storagemodel.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\80_statistics.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\80_statistics.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\80_udf.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\80_udf.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\90_generator.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\90_generator.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\createdb\99_system.sql">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\createdb\99_system.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\lib_generator.dll">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\lib_generator.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\lib_lsst.dll">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\lib_lsst.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\lib_opt_sql_append.dll">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\lib_opt_sql_append.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\lib_sql.dll">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\lib_sql.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\lib\monetdb5\lib_udf.dll">
+    </None>
+    <None Include="x64\MonetDB5\lib\monetdb5\lib_udf.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\monetdb.ico">
+    </None>
+    <None Include="x64\MonetDB5\monetdb.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\share\doc\MonetDB-SQL\dump-restore.html">
+    </None>
+    <None Include="x64\MonetDB5\share\doc\MonetDB-SQL\dump-restore.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\share\doc\MonetDB-SQL\dump-restore.txt">
+    </None>
+    <None Include="x64\MonetDB5\share\doc\MonetDB-SQL\dump-restore.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x64\MonetDB5\share\MonetDB\website.html">
+    </None>
+    <None Include="x64\MonetDB5\share\MonetDB\website.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="x86\lz4X86.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="x86\MonetDB5\banner.bmp">
+    <None Include="x86\MonetDB5\banner.bmp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\iconv.dll">
+    </None>
+    <None Include="x86\MonetDB5\bin\iconv.dll" />
+    <None Include="x86\MonetDB5\bin\libbat.dll" />
+    <None Include="x86\MonetDB5\bin\libbz2.dll" />
+    <None Include="x86\MonetDB5\bin\libeay32.dll" />
+    <None Include="x86\MonetDB5\bin\libmapi.dll" />
+    <None Include="x86\MonetDB5\bin\libmonetdb5.dll" />
+    <None Include="x86\MonetDB5\bin\libstream.dll" />
+    <None Include="x86\MonetDB5\bin\libxml2.dll" />
+    <None Include="x86\MonetDB5\bin\mclient.exe" />
+    <None Include="x86\MonetDB5\bin\mserver5.exe" />
+    <None Include="x86\MonetDB5\bin\msqldump.exe" />
+    <None Include="x86\MonetDB5\bin\pcre.dll" />
+    <None Include="x86\MonetDB5\bin\ssleay32.dll" />
+    <None Include="x86\MonetDB5\bin\stethoscope.exe" />
+    <None Include="x86\MonetDB5\bin\zlib1.dll" />
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\09_like.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libbat.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\10_math.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libbz2.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\11_times.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libeay32.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\12_url.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libmapi.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\13_date.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libmonetdb5.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\14_inet.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libstream.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\15_querylog.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\libxml2.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\16_tracelog.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\mclient.exe">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\17_temporal.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\mserver5.exe">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\20_vacuum.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\msqldump.exe">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\21_dependency_functions.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\pcre.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\22_clients.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\ssleay32.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\23_skyserver.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\stethoscope.exe">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\24_zorder.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\bin\zlib1.dll">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\25_debug.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\09_like.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\26_sysmon.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\10_math.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\27_rejects.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\11_times.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\39_analytics.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\12_url.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\40_json.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\13_date.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\41_md5sum.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\14_inet.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\45_uuid.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\15_querylog.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\46_profiler.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\16_tracelog.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\51_sys_schema_extension.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\17_temporal.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\75_storagemodel.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\20_vacuum.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\80_statistics.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\21_dependency_functions.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\80_udf.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\22_clients.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\90_generator.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\23_skyserver.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\createdb\99_system.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\24_zorder.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\lib_generator.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\25_debug.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\lib_lsst.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\26_sysmon.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\lib_opt_sql_append.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\27_rejects.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\lib_sql.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\39_analytics.sql">
+    </None>
+    <None Include="x86\MonetDB5\lib\monetdb5\lib_udf.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\40_json.sql">
+    </None>
+    <None Include="x86\MonetDB5\monetdb.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\41_md5sum.sql">
+    </None>
+    <None Include="x86\MonetDB5\share\doc\MonetDB-SQL\dump-restore.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\45_uuid.sql">
+    </None>
+    <None Include="x86\MonetDB5\share\doc\MonetDB-SQL\dump-restore.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\46_profiler.sql">
+    </None>
+    <None Include="x86\MonetDB5\share\MonetDB\website.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\51_sys_schema_extension.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\75_storagemodel.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\80_statistics.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\80_udf.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\90_generator.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\createdb\99_system.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\lib_generator.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\lib_lsst.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\lib_opt_sql_append.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\lib_sql.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\lib\monetdb5\lib_udf.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\monetdb.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\share\doc\MonetDB-SQL\dump-restore.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\share\doc\MonetDB-SQL\dump-restore.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\MonetDB5\share\MonetDB\website.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="MonetService.json" />
@@ -782,9 +755,15 @@
     <None Include="x86\MonetDB5\etc\.monetdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="x86\MonetDB5\include\monetdb\mapi.h" />
-    <None Include="x86\MonetDB5\include\monetdb\stream.h" />
-    <None Include="x86\MonetDB5\include\monetdb\stream_socket.h" />
+    <None Include="x86\MonetDB5\include\monetdb\mapi.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="x86\MonetDB5\include\monetdb\stream.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="x86\MonetDB5\include\monetdb\stream_socket.h">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="x86\MonetDB5\lib\iconv.lib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -1089,6 +1068,10 @@
     </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
